@@ -1,7 +1,7 @@
 <template>
   <nav>
     <div class="logo">
-      <a>Online Bookstore</a>
+      <a>Online Botore</a>
     </div>
     <router-link v-if="isAuthenticated === true" to="/">Book List</router-link>
     <router-link v-if="cartLength > 0" to="/cart">In Cart ({{ cartLength }})</router-link>
