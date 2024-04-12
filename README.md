@@ -1,5 +1,11 @@
 # bookstore
 
+## default login username and password
+username: user
+password: password
+
+*can be changed on ./store/index.js state -> username password
+
 ## Project setup
 ```
 npm install
