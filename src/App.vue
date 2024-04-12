@@ -9,7 +9,7 @@
   <router-view/>
   <div class="logout-btn">
       <button v-if="isAuthenticated === true" @click="LogoutUser">Logout</button>
-    </div>
+  </div>
 </template>
 
 <script>
@@ -40,22 +40,23 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
+  color: #080C10;
 }
 
 nav {
   display: flex;
   gap: 10px;
   padding: 30px;
+  align-items: center;
 }
 
 nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #080C10;
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: #5598E5;
 }
 
 ul {
@@ -65,8 +66,8 @@ ul {
 
 .logo a{
   padding: 20px;
-  color: 34495E;
-  background-color: #41B883;
+  color: #080C10;
+  font-size: 24px;
 }
 
 .logout-btn {
@@ -75,6 +76,13 @@ ul {
   bottom: 0;
   right: 0;
   margin: 10px; 
+}
+.logout-btn button {
+  background-color: #f65c39;
+  color: white;
+  border: none;
+  padding: 15px 35px;
+  border-radius: 3px;
 }
 
 </style>

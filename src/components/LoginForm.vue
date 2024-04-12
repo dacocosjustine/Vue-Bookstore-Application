@@ -32,10 +32,25 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .form {
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
+input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      margin-right: 10px;
+      width: 400px;
+  }
+  button {
+    background-color: #4985CA;
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    margin-top: 20px;
+    border-radius: 3px;
 }
 </style>

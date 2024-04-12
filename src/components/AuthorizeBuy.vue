@@ -1,8 +1,10 @@
 <template>
-    <h1>Authorize Payment</h1>
-    <h5>Enter your Password to Authorize this Transaction</h5>
-    <input type="password" v-model="authPassword" placeholder="Enter Password">
-    <button @click="authorizeTransaction">Authorize Transaction</button>
+    <div class="container">
+        <h1>Authorize Payment</h1>
+        <h3>Enter your password to authorize this transaction</h3>
+        <input type="password" v-model="authPassword" placeholder="Enter Password">
+        <button @click="authorizeTransaction">Authorize Transaction</button>
+    </div>
 </template>
 
 <script>
@@ -31,3 +33,25 @@ name: 'AuthorizeBuy',
 
 };
 </script>
+
+<style scoped>
+.container {
+    align-items: center;
+    text-align: center;
+}
+button {
+    background-color: #4985CA;
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    margin: 20px;
+    border-radius: 3px;
+}
+input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      margin-right: 10px;
+      width: 400px;
+  }
+</style>
