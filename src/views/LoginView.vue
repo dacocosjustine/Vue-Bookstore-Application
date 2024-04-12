@@ -1,20 +1,19 @@
 <template>
   <div class="main-content">
     <div>
-      <BookList></BookList>
+      <LoginForm></LoginForm>
     </div>
   </div>
 </template>
 
 <script>
-import BookList from '@/components/BookList.vue'
-
+import LoginForm from '@/components/LoginForm.vue';
 export default {
+  name: 'LoginPage',
   components: {
-    BookList
-  }
-}
-
+    LoginForm
+  },
+};
 </script>
 
 <style scoped>
@@ -22,6 +21,5 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
 }
 </style>

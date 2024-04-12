@@ -1,20 +1,20 @@
 <template>
   <div class="main-content">
     <div>
-      <BookList></BookList>
+      <CartList></CartList>
     </div>
   </div>
 </template>
 
 <script>
-import BookList from '@/components/BookList.vue'
+import CartList from '@/components/CartList.vue';
 
 export default {
+  name: 'CartView',
   components: {
-    BookList
-  }
-}
-
+    CartList, 
+  },
+};
 </script>
 
 <style scoped>
@@ -22,6 +22,5 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
 }
 </style>
